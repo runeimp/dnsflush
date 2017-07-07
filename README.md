@@ -1,12 +1,28 @@
 `dnsflush`
 ==========
 
-This is a simple BASH script to flush the DNS on OS X from 10.1 (Cheetah) to 10.11 (El Capitan).
+This is a simple BASH script to flush the DNS on OS X/macOS from 10.1 (Cheetah) to 10.12 (Sierra).
+
 
 Rational
 --------
 
-The steps needed to flush the DNS cache on OS X changes almost every time the OS gets an significant upgrade. I wanted a simple tool that could handle this task and though I typically have the latest or 2nd to latest version I decided to add all versions I could find instructions for just for my own edification. I would be suprised if anyone is still using Cheetah, Puma, Panther, or Tiger for example. But the script should work for all current versions reasonably available. Up to El Capitan. I have locked the script to not attempt a DNS flush of any potentially newer versions of OS X as the next version has at least a 50/50 chance of being different.
+The steps needed to flush the DNS cache on OS X changes almost every time the OS gets an significant upgrade. I wanted a simple tool that could handle this task and though I typically have the latest or 2nd to latest version I decided to add all versions I could find instructions for just for my own edification. I would be suprised if anyone is still using Cheetah, Puma, Panther, or Tiger for example. But the script should work for all current versions reasonably available. Up to Sierra. I have locked the script to not attempt a DNS flush of any potentially newer versions of OS X as the next version has at least a 50/50 chance of being different.
+
+
+Installation
+------------
+
+This is essentially what I do:
+
+```bash
+$ mkdir -p ~/github/apps
+$ cd ~/github/apps
+$ git clone git@github.com:runeimp/dnsflush.git
+$ cd ~/bin # Create this directory and put it in your path if this is not already the case
+$ ln -s ~/github/apps/dnsflush/dnsflush.bash dnsflush
+```
+
 
 Fitness for Use
 ---------------
