@@ -1,7 +1,7 @@
-`dnsflush`
-==========
+`dnsflush` v1.2.0
+=================
 
-This is a simple BASH script to flush the DNS on OS X/macOS from 10.1 (Cheetah) to 10.12 (Sierra).
+This is a simple BASH script to flush the DNS on OS X/macOS from 10.1 (Cheetah) to 10.13 (High Sierra).
 
 
 Rational
@@ -27,4 +27,4 @@ $ ln -s ~/github/apps/dnsflush/dnsflush.bash dnsflush
 Fitness for Use
 ---------------
 
-I give no garauntees for this scripts fitness for use on any specific system. It is my personal compilation of examples found on the Internet. Based on the sources I got the code from I suspect it is "safe enough" to not mangle any untested systems (I've only used this on my own iMac with El Capitan) do not blame me if you try this and your system suffers for it. I share this code with the world so as to be easy for me to reference personally and in the hope that others will find it useful.
+I give no garauntees for this scripts fitness for use on any specific system. It is my personal compilation of examples found on the Internet. Based on the sources I got the code from I suspect it is "safe enough" to not mangle any untested systems (I've only used this on my own iMac with El Capitan on up) do not blame me if you try this and your system suffers for it. I share this code with the world so as to be easy for me to reference personally and in the hope that others will find it useful.
