@@ -25,7 +25,7 @@
 #
 declare -r APP_CLI="dnsflush"
 declare -r APP_NAME="DNS Flush"
-declare -r APP_VERSION="1.2.0"
+declare -r APP_VERSION="1.2.1"
 declare -r APP_LABEL="$APP_NAME v$APP_VERSION"
 
 declare -a OS_LIST_10
@@ -43,6 +43,7 @@ OS_LIST_10[10]='Yosemite'      # 10.10
 OS_LIST_10[11]='El Capitan'    # 10.11
 OS_LIST_10[12]='Sierra'        # 10.12
 OS_LIST_10[13]='High Sierra'   # 10.13
+OS_LIST_10[14]='Mojave'        # 10.14
 declare -r OS_NAME=$(uname -s)
 declare -r OS_VERSION=$(uname -r)
 
@@ -138,8 +139,8 @@ case "$OS_NAME" in
 					sudo discoveryutil udnsflushcaches
 					dns_flushed=0
 					;;
-				7 | 8 | 13)
-					# Lion, Mountain Lion, High Sierra
+				7 | 8 | 13 | 14)
+					# Lion, Mountain Lion, High Sierra, Mojave
 					sudo killall -HUP mDNSResponder
 					dns_flushed=0
 					;;
